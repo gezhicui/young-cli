@@ -1,0 +1,9 @@
+lockfileVersion: 5.4
+
+importers:
+
+  packages/cli-demo:
+    specifiers:
+      create-young: workspace:^1.0.0
+    dependencies:
+      create-young: link:../create-young
