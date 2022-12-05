@@ -27,6 +27,17 @@ export const helpSections = [
 //创建模板时的选项
 export const promptsOptions = [
   {
+    type: 'select', //单选
+    name: 'template',
+    message: 'select a framework',
+    choices: [
+      { title: 'esbuild', value: 'esbuild' },
+      { title: 'rollup', value: 'rollup' },
+      { title: 'tsc', value: 'tsc' },
+      { title: 'webpack', value: 'webpack' },
+    ],
+  },
+  {
     type: 'text', //单选
     name: 'name',
     message: 'project-name',
@@ -36,15 +47,5 @@ export const promptsOptions = [
       if (val.match(/[^A-Za-z0-9\u4e00-\u9fa5_-]/g)) return '模板名称包含非法字符，请重新输入';
       return true;
     },
-  },
-
-  {
-    type: 'select', //单选
-    name: 'template',
-    message: 'select a framework',
-    choices: [
-      { title: 'esbuild', value: 1 },
-      { title: 'rollup', value: 2 },
-    ],
   },
 ];

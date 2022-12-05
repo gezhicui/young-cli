@@ -40,9 +40,9 @@ const gitClone = (remote, name, option) => {
 
 //创建模板
 export const createTemplate = async () => {
-  const res = await prompts(promptsOptions);
-  if (!(res.name && res.template)) return;
-  gitClone(`direct:https://gitee.com/xiang0515/npm-bundle-template.git#esbuild`, res.name, {
+  const {name,template} = await prompts(promptsOptions);
+  if (!(name && template)) return;
+  gitClone(`direct:https://github.com/gezhicui/npm-bundle-template.git#${template}`, name, {
     clone: true,
   });
 };
