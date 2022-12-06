@@ -4,7 +4,7 @@ import prompts from 'prompts';
 import download from 'download-git-repo';
 import ora from 'ora';
 import { readFile } from 'fs/promises';
-import { helpSections, optionDefinitions, promptsOptions } from './config.js';
+import { helpSections, promptsOptions } from './config.js';
 
 // 获取帮助信息
 export const getHelpInfo = () => {

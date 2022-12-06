@@ -1,5 +1,5 @@
 {
-  "name": "create-young",
+  "name": "create-tpl-cli",
   "version": "1.0.1",
   "description": "",
   "bin": "index.js",
